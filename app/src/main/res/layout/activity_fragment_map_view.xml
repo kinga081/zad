@@ -1,0 +1,41 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    tools:context="gr10.planner.MapViewFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fitsSystemWindows="false"
+        android:layout_alignParentTop="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="88dp"
+        android:layout_marginRight="16dp"
+        android:src="@android:drawable/ic_media_play"
+        android:tint="#3F51B5"
+        app:backgroundTint="#3F51B5"
+        app:elevation="6dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/center_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:tint="#3F51B5"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:elevation="6dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
