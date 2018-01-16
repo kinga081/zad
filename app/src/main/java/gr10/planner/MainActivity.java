@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(startNewActivity);
             }
         });
-    }
+    }////
 
     protected void makeRequest() {
         ActivityCompat.requestPermissions(this,

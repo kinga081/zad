@@ -23,6 +23,8 @@ public class MapsActivity extends FragmentActivity
         OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private RoadDrawer rd;
+    private RoadDrawer rd2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,10 @@ public class MapsActivity extends FragmentActivity
                 .position(new LatLng(51.2504931, 22.572428400000035))
                 .title("Zamek Lubelski")
                 .snippet("Zamkowa 9, 20-117"));
+
+        rd =new RoadDrawer(mMap,"51.2504931,22.572428400000035;51.3504931,22.572428400000035;");
+        rd.draw();
+       // rd2=new RoadDrawer(map,"52.2504931, 22.572428400000035");
     }
 
 
@@ -57,7 +63,7 @@ public class MapsActivity extends FragmentActivity
 
 
     public boolean onMyLocationButtonClick() {
-        Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Moja lokalizacja", Toast.LENGTH_SHORT).show();
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
         return false;
